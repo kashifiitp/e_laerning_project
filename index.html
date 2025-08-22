@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Modern E-Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="min-h-screen text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-600"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-800">LearnHub</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#courses" class="text-gray-600 hover:text-indigo-600 transition-colors">Courses</a>
+                        <a href="#features" class="text-gray-600 hover:text-indigo-600 transition-colors">Features</a>
+                        <a href="#dashboard" class="text-gray-600 hover:text-indigo-600 transition-colors">Dashboard</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                        Sign In
+                    </button>
+                    <button class="hidden md:block bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                Learn Without
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">Limits</span>
+            </h1>
+            <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                Discover thousands of courses, learn from expert instructors, and track your progress with our intelligent learning platform.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                    <i class="fas fa-play-circle mr-2"></i>
+                    Start Learning
+                </button>
+                <button class="glass-effect text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all">
+                    <i class="fas fa-book-open mr-2"></i>
+                    Browse Courses
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Powerful Learning Features</h2>
+                <p class="text-white/80 text-lg">Everything you need for effective online learning</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-effect p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">HD Video Lectures</h3>
+                    <p class="text-white/80">Crystal clear video lessons with interactive transcripts</p>
+                </div>
+
+                <div class="glass-effect p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tasks text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Interactive Quizzes</h3>
+                    <p class="text-white/80">Test your knowledge with engaging assessments</p>
+                </div>
+
+                <div class="glass-effect p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Progress Tracking</h3>
+                    <p class="text-white/80">Monitor your learning journey with detailed analytics</p>
+                </div>
+
+                <div class="glass-effect p-6 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Community Support</h3>
+                    <p class="text-white/80">Connect with instructors and fellow learners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Courses</h2>
+                <p class="text-gray-600 text-lg">Hand-picked courses to boost your skills</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d746bba-9d87-4971-b5ae-4b915d1b7207.png" alt="Modern web development course cover with code snippets and browser windows" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm">
+                            <i class="fas fa-code mr-1"></i> Tech
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Full Stack Web Development</h3>
+                        <p class="text-gray-600 mb-4">Master HTML, CSS, JavaScript, Node.js and more</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="text-sm">4.9 (245 reviews)</span>
+                            </div>
+                            <span class="text-sm text-gray-500">12 weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-indigo-600">$79.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93e7046e-e0e3-4719-ba22-a131933e2fdc.png" alt="Data science course cover with graphs, charts and machine learning diagrams" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm">
+                            <i class="fas fa-chart-bar mr-1"></i> Data
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Data Science Mastery</h3>
+                        <p class="text-gray-600 mb-4">Python, Pandas, NumPy, and Machine Learning</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="text-sm">4.8 (189 reviews)</span>
+                            </div>
+                            <span class="text-sm text-gray-500">16 weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-green-600">$89.99</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1dd304ac-d03b-4b56-843c-1793b5e30466.png" alt="UI/UX design course cover with wireframes, mockups and design tools" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm">
+                            <i class="fas fa-palette mr-1"></i> Design
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">UI/UX Design Pro</h3>
+                        <p class="text-gray-600 mb-4">Learn design principles, Figma, and prototyping</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="text-sm">4.7 (156 reviews)</span>
+                            </div>
+                            <span class="text-sm text-gray-500">8 weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-yellow-600">$69.99</span>
+                            <button class="bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition-colors">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section id="dashboard" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Smart Learning Dashboard</h2>
+                <p class="text-gray-600 text-lg">Track your progress and optimize your learning</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Your Progress</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                <div>
+                                    <h4 class="font-semibold">Web Development Course</h4>
+                                    <p class="text-sm text-gray-600">12 of 24 lessons completed</p>
+                                </div>
+                                <div class="w-16 h-16">
+                                    <svg class="progress-ring w-16 h-16" viewBox="0 0 100 100">
+                                        <circle class="text-gray-200" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50"/>
+                                        <circle class="text-indigo-600" stroke-width="8" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50" stroke-dasharray="251.2" stroke-dashoffset="125.6"/>
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center text-sm font-semibold text-indigo-600">50%</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                <div>
+                                    <h4 class="font-semibold">Quiz Performance</h4>
+                                    <p class="text-sm text-gray-600">Average score: 85%</p>
+                                </div>
+                                <div class="text-2xl font-bold text-green-600">A</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Upcoming Deadlines</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                                <div>
+                                    <h4 class="font-semibold">Module 3 Quiz</h4>
+                                    <p class="text-sm text-gray-600">Due in 2 days</p>
+                                </div>
+                                <i class="fas fa-clock text-yellow-500 text-xl"></i>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                                <div>
+                                    <h4 class="font-semibold">Project Submission</h4>
+                                    <p class="text-sm text-gray-600">Due in 1 week</p>
+                                </div>
+                                <i class="fas fa-project-diagram text-blue-500 text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Player Demo -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Interactive Learning Experience</h2>
+                <p class="text-gray-600 text-lg">Engaging video lessons with real-time interaction</p>
+            </div>
+
+            <div class="bg-gray-900 rounded-2xl p-6">
+                <div class="video-container mb-4">
+                    <div class="bg-black rounded-lg flex items-center justify-center">
+                        <i class="fas fa-play-circle text-6xl text-white opacity-50"></i>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-white text-xl font-semibold">Introduction to JavaScript</h3>
+                    <div class="flex items-center space-x-2">
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded text-sm">
+                            <i class="fas fa-play mr-1"></i> Play
+                        </button>
+                        <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">
+                            <i class="fas fa-expand mr-1"></i> Fullscreen
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-4">
+                    <h4 class="text-white font-semibold mb-2">Lesson Transcript</h4>
+                    <p class="text-gray-300 text-sm">
+                        Welcome to JavaScript fundamentals. In this lesson, we'll cover variables, data types, and basic operations...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Demo -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Interactive Quiz System</h2>
+                <p class="text-gray-600 text-lg">Test your knowledge with smart assessments</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-semibold mb-2">JavaScript Fundamentals Quiz</h3>
+                    <p class="text-gray-600">Question 1 of 5</p>
+                </div>
+
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold mb-4">What does the 'let' keyword do in JavaScript?</h4>
+                    <div class="space-y-3">
+                        <div class="quiz-option bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-indigo-50 border-2 border-transparent hover:border-indigo-300">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 rounded-full border-2 border-gray-300 mr-3"></div>
+                                <span>Declares a block-scoped variable</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-indigo-50 border-2 border-transparent hover:border-indigo-300">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 rounded-full border-2 border-gray-300 mr-3"></div>
+                                <span>Declares a global variable</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-indigo-50 border-2 border-transparent hover:border-indigo-300">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 rounded-full border-2 border-gray-300 mr-3"></div>
+                                <span>Declares a constant value</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-indigo-50 border-2 border-transparent hover:border-indigo-300">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 rounded-full border-2 border-gray-300 mr-3"></div>
+                                <span>Declares a function</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center">
+                    <button class="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        Previous
+                    </button>
+                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                        Next Question
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-400"></i>
+                        <span class="ml-2 text-xl font-bold">LearnHub</span>
+                    </div>
+                    <p class="text-gray-400">Empowering learners worldwide with quality education and innovative technology.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter</p>
+                    <div class="flex mt-2">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-3 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <button class="bg-indigo-600 px-4 py-2 rounded-r-lg hover:bg-indigo-700 transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 LearnHub. All rights reserved. Built with passion for education.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script  src="app.js">
+
+    </script>
+</body>
+</html>
